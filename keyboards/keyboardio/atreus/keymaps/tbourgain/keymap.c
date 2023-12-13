@@ -36,10 +36,10 @@ enum layer_names {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QW] = LAYOUT( /* Qwerty */
-    KC_Q,    KC_W,    KC_E,    KC_R,   KC_T,                    KC_Y,   KC_U,   KC_I,    KC_O,    KC_P,
-    HOME_A,  HOME_S,  HOME_D,  HOME_F, KC_G,                    KC_H,   HOME_J, HOME_K,  HOME_L,  HOME_SCLN,
-    SFT_Z,   KC_X,    KC_C,    KC_V,   KC_B,   KC_GRV, KC_BSLS, KC_N,   KC_M,   KC_COMM, KC_DOT,  SFTSL,
-    KC_LCTL, KC_LGUI, KC_LALT, LTLWS,  KC_SPC, LTMOS,  MTAGR,   KC_SPC, LTRSS,  KC_MINS, KC_QUOT, KC_ENT ),
+    KC_Q,    KC_W,    KC_E,    KC_R,  KC_T,                    KC_Y,   KC_U,  KC_I,    KC_O,    KC_P,
+    KC_A,    KC_S,    KC_D,    KC_F,  KC_G,                    KC_H,   KC_J,  KC_K,    KC_L,    HOME_SCLN,
+    SFT_Z,   KC_X,    KC_C,    KC_V,  KC_B,   KC_GRV, KC_BSLS, KC_N,   KC_M,  KC_COMM, KC_DOT,  SFTSL,
+    KC_LCTL, KC_LGUI, KC_LALT, LTLWS, KC_SPC, LTMOS,  MTAGR,   KC_SPC, LTRSS, KC_MINS, KC_QUOT, KC_ENT ),
 
   [_RS] = LAYOUT( /* [> RAISE <] */
     KC_EXLM, KC_AT,   KC_UP,   KC_DLR,  KC_PERC,                  KC_PGUP, KC_7,    KC_8,   KC_9, KC_BSPC,
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_INS,  KC_HOME, KC_UP,   KC_END,  KC_PGUP,                   KC_UP,   KC_F7,   KC_F8,   KC_F9,   KC_F10,
     KC_DEL,  KC_LEFT, KC_DOWN, KC_RGHT, KC_PGDN,                   KC_DOWN, KC_F4,   KC_F5,   KC_F6,   KC_F11,
     KC_NO,   KC_VOLU, DM_REC1, DM_PLY1,   QK_BOOT, _______, _______, KC_NO,   KC_F1,   KC_F2,   KC_F3,   KC_F12,
-    KC_NO,   KC_VOLD, KC_LALT, KC_LSFT, KC_BSPC, KC_LCTL, MTAGR, KC_SPC,  TO(_QW), KC_PSCR, KC_SCRL, DM_RSTP ),
+    KC_NO,   KC_VOLD, KC_LALT, KC_TRNS, KC_BSPC, KC_LCTL, MTAGR, KC_SPC,  TO(_QW), KC_PSCR, KC_SCRL, DM_RSTP ),
 
   [_MS] = LAYOUT( /* [> MOUSE <] */
     _______, _______, _______, _______, _______,                   _______, KC_BTN1, KC_MS_U, KC_BTN2, _______,
